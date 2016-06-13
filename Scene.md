@@ -15,5 +15,6 @@
 
 ##树木
 ##风域
+导航菜单->GameObj->3D obj ->wind zone
 
 
