@@ -7,5 +7,6 @@
   - 其他设置
  
 ##地形
+导航菜单->GameObj->3D obj ->Terrain
 
 
