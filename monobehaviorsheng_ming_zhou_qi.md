@@ -8,4 +8,6 @@ fixupdate() 固定时间间隔更新
 onGUI（） 绘制界面
 onDestroy() 销毁
 onENable（） 激活脚本
+onDisable() 脚本禁用时候被调用  
+
 
