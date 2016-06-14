@@ -14,7 +14,7 @@ onDisable() 脚本禁用时候被调用
 
 C#脚本改名字 选中按F2后输入
 
-#onGUI函数的使用
+##onGUI函数的使用
 ```
 void OnGUI()
     {
