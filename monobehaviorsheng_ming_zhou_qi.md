@@ -46,6 +46,8 @@ void OnGUI()
 		receiver.SendMessage("ShowNumber",100,SendMessageOptions.DontRequireReceiver);
 	}
 ```
+##克隆预制体
+
 ##习题
 onGUI做一个类调查问卷    
 创建球体 并通过键盘wasd进行移动控制  
