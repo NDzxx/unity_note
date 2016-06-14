@@ -38,6 +38,14 @@ void OnGUI()
 ```
 ##添加修改组件
 
+##向游戏对象发送消息
+```
+	public GameObject receiver;
+	void Start () {
+		//向本脚本所属的游戏对象发送ShowNumber消息并传递参数100
+		receiver.SendMessage("ShowNumber",100,SendMessageOptions.DontRequireReceiver);
+	}
+```
 ##习题
 onGUI做一个类调查问卷    
 创建球体 并通过键盘wasd进行移动控制  
