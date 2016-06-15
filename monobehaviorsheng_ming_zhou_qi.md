@@ -76,7 +76,37 @@ obj = GameObject.Find("Cube");
 
 ##习题
 onGUI做一个类调查问卷    
-创建球体 并通过键盘wasd进行移动控制  
+创建球体 并通过键盘wasd进行移动控制  （完成）
+```
+using UnityEngine;
+using System.Collections;
+
+public class hw1_3 : MonoBehaviour {
+
+    public GameObject sphere;
+    void Update()
+    {
+        //按下键盘W键
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            sphere.transform.Translate(new Vector3(0f, 0.5f, 0f));
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            sphere.transform.Translate(new Vector3(-0.5f, 0f, 0f));
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            sphere.transform.Translate(new Vector3(0f, -0.5f, 0f));
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            sphere.transform.Translate(new Vector3(0.5f, 0f, 0f));
+        }
+    }
+}
+
+```
 
 
 
