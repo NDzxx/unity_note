@@ -69,7 +69,8 @@ public GameObject obj;
 ```
 - 通过对象名获取对象
 ```
-obj = GameObject.Find("cube");
+//查找只需要名字即可
+obj = GameObject.Find("Cube");
 ```
 ##克隆预制体
 
