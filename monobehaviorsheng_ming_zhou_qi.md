@@ -61,6 +61,16 @@ if (GUILayout.Button("创建立方体", GUILayout.Height(50)))
     obj.transform.position = new Vector3(0, 5f, 0);
 }
 ```
+##获取游戏对象
+- 通过指定 代码声明公开游戏对象，然后在inspector属性栏中指定
+```
+//例如
+public GameObject obj;
+```
+- 通过对象名获取对象
+```
+obj = GameObject.Find("cube");
+```
 ##克隆预制体
 
 ##习题
