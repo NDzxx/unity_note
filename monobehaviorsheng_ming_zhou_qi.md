@@ -74,6 +74,8 @@ obj = GameObject.Find("Cube");
 ```
 ##克隆预制体
 
+unity的xyz坐标系是左手坐标，x是屏幕左右，y是屏幕上下，Z是屏幕里外
+
 ##习题
 onGUI做一个类调查问卷    
 创建球体 并通过键盘wasd进行移动控制  （完成）
