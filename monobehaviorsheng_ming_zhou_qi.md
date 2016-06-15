@@ -36,7 +36,6 @@ void OnGUI()
 
 }
 ```
-##添加修改组件
 
 ##向游戏对象发送消息
 ```
@@ -45,6 +44,22 @@ void OnGUI()
 		//向本脚本所属的游戏对象发送ShowNumber消息并传递参数100
 		receiver.SendMessage("ShowNumber",100,SendMessageOptions.DontRequireReceiver);
 	}
+```
+##创建游戏对象
+```
+if (GUILayout.Button("创建立方体", GUILayout.Height(50)))
+        {
+            //设置该模型默认为立方体
+            GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            //为对象添加一个刚体，赋予物理属性
+            obj.AddComponent<Rigidbody>();
+            //赋予对象的材质红色
+            obj.GetComponent<Renderer>().material.color = Color.red;
+            //设置对象的名称
+            obj.name = "Cube";
+            //设置此模型材质的位置坐标
+            obj.transform.position = new Vector3(0, 5f, 0);
+        }
 ```
 ##克隆预制体
 
